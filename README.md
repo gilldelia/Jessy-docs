@@ -1,4 +1,4 @@
-# Jessy - Compagne numérique personnalisée avec IA locale
+# Jessy - Assistant numérique personnalisé avec IA locale
 
 **Jessy** est une application console .NET 10 qui connecte un modèle LLM local (via Ollama) à une personnalité configurable, avec mémoire à court et long terme gérée par Qdrant.
 
@@ -8,7 +8,7 @@
 - **Mémoire contextuelle** :
   - **Court terme** : derniers échanges (max 200 messages, 3 jours) dans `history.json`, fenêtrés à chaque tour.
   - **Long terme** : messages embedés dans Qdrant (collection explicite) avec score de récurrence et éviction.
-  - **Mémoire intuitive** : les souvenirs assistant récurrents peuvent migrer vers une collection dédiée avant éviction.
+  - **Mémoire intuitive** : les réponses assistant récurrentes peuvent migrer vers une collection dédiée avant éviction.
 - **LLM local** : API OpenAI-compatible (Ollama) avec modèle ajustable (`llama3.3:70b` par défaut).
 - **Embeddings** : `nomic-embed-text` pour la recherche vectorielle.
 - **RAG** : rappel auto du top-K depuis Qdrant avec scoring hybride (similarité + récurrence).
