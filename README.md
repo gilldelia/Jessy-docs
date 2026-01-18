@@ -2,7 +2,7 @@
 
 # Memory Service
 
-Microservice de gestion de la m�moire vectorielle pour Jessy.
+Microservice de gestion de la m�moire vectorielle pour J.E.S.S.I.
 
 ## Endpoints
 
@@ -125,9 +125,12 @@ Fichier `appsettings.json` :
 
 ## Racine
 
-# Jessy - Assistant num�rique personnalis� avec IA locale
+# J.E.S.S.I
 
-**Jessy** est une application console .NET 10 qui connecte un mod�le LLM local (via Ollama) � une personnalit� configurable, avec m�moire � court et long terme g�r�e par Qdrant.
+
+**J**oint **E**xecution & **S**upervision **S**ystem for **I**ntelligence
+
+**J.E.S.S.I** est une application console .NET 10 qui connecte un modèle LLM local (via Ollama) à une personnalité configurable, avec mémoire à court et long terme gérée par Qdrant.
 
 ## Fonctionnalit�s
 
@@ -197,10 +200,10 @@ Param�tres techniques (LLM, embeddings, m�moire). Les champs cl� :
 
 ## Tests
 
-- Projet de tests : `Jessy.Tests` (xUnit).
+- Projet de tests : `Ame.Tests` et `Memory.Tests` (xUnit).
 - Ex�cution :
   ```sh
-  dotnet test Jessy.Tests/Jessy.Tests.csproj
+  dotnet test Ame.Tests/Ame.Tests.csproj
   ```
 - Couverture actuelle :
   - `MemoryBuffer` (ajout/clear snapshot).
@@ -213,11 +216,11 @@ Param�tres techniques (LLM, embeddings, m�moire). Les champs cl� :
 - Script : `scripts/publish-docs.ps1` g�n�re `docs-out/` (copie `README.md`, `docs/`, samples) et pousse vers le d�p�t public.
 - Secrets � configurer dans le d�p�t priv� (Actions ? Repository secrets) :
   - `DOCS_REPO_TOKEN` : PAT avec `contents:write` sur le d�p�t public de docs.
-  - `PUBLIC_DOCS_REPO_URL` : URL https du d�p�t public (ex: `https://github.com/<org>/Jessy-docs.git`).
+  - `PUBLIC_DOCS_REPO_URL` : URL https du d�p�t public (ex: `https://github.com/<org>/J.E.S.S.I-docs.git`).
 - Branche cible publique par d�faut : `main` (modifie `-Branch` dans le workflow/PS1 si besoin).
 - Usage local (sans push) :
   ```sh
-  pwsh ./scripts/publish-docs.ps1 -OutputPath docs-out -PublicRepoUrl "https://github.com/<org>/Jessy-docs.git" -Branch main
+  pwsh ./scripts/publish-docs.ps1 -OutputPath docs-out -PublicRepoUrl "https://github.com/<org>/J.E.S.S.I-docs.git" -Branch main
   ```
 
 ## D�pannage
