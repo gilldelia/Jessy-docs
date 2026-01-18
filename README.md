@@ -70,15 +70,15 @@ Tests du client dans `Ame.Tests`.
 
 # Memory
 
-Microservice de m�moire vectorielle pour Jessy (API .NET 8), pens� pour se rapprocher d�un fonctionnement � m�moire humaine � : stockage durable, rappel contextuel, et pond�ration par r�currence/pertinence.
+Microservice de mémoire vectorielle pour Jessy (API .NET 8), pensé pour se rapprocher d’un fonctionnement « mémoire humaine » : stockage durable, rappel contextuel, et pondération par récurrence/pertinence.
 
 ## Ce que fait le service
 - Stocke des souvenirs texte dans Qdrant avec embeddings.
-- Propose une recherche hybride (similarit� + r�currence).
-- Expose des endpoints HTTP : insertion (`POST /memories/upsert`), recherche (`POST /memories/search`), sant� (`GET /healthz`).
+- Propose une recherche hybride (similarité + récurrence).
+- Expose des endpoints HTTP : insertion (`POST /memories/upsert`), recherche (`POST /memories/search`), santé (`GET /healthz`).
 
-## D�marrage rapide
-1) Pr�requis : .NET 8 SDK, Qdrant, endpoint d'embeddings (ex. Ollama `nomic-embed-text`).
+## Démarrage rapide
+1) Prérequis : .NET 8 SDK, Qdrant, endpoint d'embeddings (ex. Ollama `nomic-embed-text`).
 2) Configurer `appsettings.json` (section `Memory`) : URLs Qdrant et embeddings, collections, `TopK`, `ReorgMinutes`.
 3) Lancer :
 ```sh
@@ -86,7 +86,7 @@ dotnet run --project Memory/Memory.csproj
 ```
 
 ## Docs & publication
-- G�n�ration/push via `scripts/publish-docs.ps1` et workflow `.github/workflows/publish-docs.yml`.
+- Génération/push via `scripts/publish-docs.ps1` et workflow `.github/workflows/publish-docs.yml`.
 
 ## Tests
 ```sh
