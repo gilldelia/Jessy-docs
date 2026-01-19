@@ -1,8 +1,8 @@
 # Racine
 
-# Jessy - Assistant numérique avec IA locale
+# J.E.S.S.I - Joint Environment for Self-evolving Synthetic Intelligence
 
-Jessy est une solution .NET 10 qui combine un LLM local (Ollama) et une mémoire vectorielle (Qdrant) pour un assistant personnalisé.
+J.E.S.S.I (Joint Environment for Self-evolving Synthetic Intelligence) est une solution .NET 10 qui combine un LLM local (Ollama) et une mémoire vectorielle (Qdrant) pour un assistant personnalisé.
 
 ## Projets
 - `Ame/` : client applicatif et configuration.
@@ -42,7 +42,7 @@ Voir le fichier [LICENSE](LICENSE) pour les conditions complètes.
 
 # Ame
 
-Client applicatif de Jessy (C#/.NET 10) qui pilote le LLM local via Ollama et consomme le microservice `Memory` pour la mémoire vectorielle.
+Client applicatif de J.E.S.S.I (Joint Environment for Self-evolving Synthetic Intelligence) en C#/.NET 10 qui pilote le LLM local via Ollama et consomme le microservice `Memory` pour la mémoire vectorielle.
 
 ## Ce que fait Ame
 - Charge la personnalité depuis `personality.json` et la configuration depuis `config.json`.
